@@ -14,6 +14,10 @@
 		595B7C042A3A3804006A321D /* PersonalInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595B7C032A3A3803006A321D /* PersonalInfo.swift */; };
 		595B7C062A3A3813006A321D /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595B7C052A3A3813006A321D /* Home.swift */; };
 		595B7C082A3A3821006A321D /* Resume.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595B7C072A3A3821006A321D /* Resume.swift */; };
+		CA1E63732A3A463100C202E3 /* InterviewTips.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1E63722A3A463100C202E3 /* InterviewTips.swift */; };
+		CA1E63752A3A466400C202E3 /* NoResume.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1E63742A3A466400C202E3 /* NoResume.swift */; };
+		CA1E63772A3A467600C202E3 /* TechInterview.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1E63762A3A467600C202E3 /* TechInterview.swift */; };
+		CA1E63792A3A468A00C202E3 /* EmailTips.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1E63782A3A468A00C202E3 /* EmailTips.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +29,10 @@
 		595B7C032A3A3803006A321D /* PersonalInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInfo.swift; sourceTree = "<group>"; };
 		595B7C052A3A3813006A321D /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		595B7C072A3A3821006A321D /* Resume.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resume.swift; sourceTree = "<group>"; };
+		CA1E63722A3A463100C202E3 /* InterviewTips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewTips.swift; sourceTree = "<group>"; };
+		CA1E63742A3A466400C202E3 /* NoResume.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoResume.swift; sourceTree = "<group>"; };
+		CA1E63762A3A467600C202E3 /* TechInterview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechInterview.swift; sourceTree = "<group>"; };
+		CA1E63782A3A468A00C202E3 /* EmailTips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailTips.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +69,10 @@
 				595B7C032A3A3803006A321D /* PersonalInfo.swift */,
 				5928E1922A37731900524411 /* ContentView.swift */,
 				595B7C052A3A3813006A321D /* Home.swift */,
+				CA1E63722A3A463100C202E3 /* InterviewTips.swift */,
+				CA1E63742A3A466400C202E3 /* NoResume.swift */,
+				CA1E63762A3A467600C202E3 /* TechInterview.swift */,
+				CA1E63782A3A468A00C202E3 /* EmailTips.swift */,
 				595B7C072A3A3821006A321D /* Resume.swift */,
 				5928E1942A37731C00524411 /* Assets.xcassets */,
 				5928E1962A37731C00524411 /* Preview Content */,
@@ -149,8 +161,12 @@
 				5928E1932A37731900524411 /* ContentView.swift in Sources */,
 				595B7C082A3A3821006A321D /* Resume.swift in Sources */,
 				5928E1912A37731900524411 /* Final_ProjectApp.swift in Sources */,
+				CA1E63732A3A463100C202E3 /* InterviewTips.swift in Sources */,
+				CA1E63752A3A466400C202E3 /* NoResume.swift in Sources */,
 				595B7C062A3A3813006A321D /* Home.swift in Sources */,
 				595B7C042A3A3804006A321D /* PersonalInfo.swift in Sources */,
+				CA1E63772A3A467600C202E3 /* TechInterview.swift in Sources */,
+				CA1E63792A3A468A00C202E3 /* EmailTips.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
