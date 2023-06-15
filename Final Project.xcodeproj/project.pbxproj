@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		591968E42A3B70AB00ACFCA2 /* ResumeBuilding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591968E32A3B70AB00ACFCA2 /* ResumeBuilding.swift */; };
+		591968E62A3B70E700ACFCA2 /* AddEdu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591968E52A3B70E700ACFCA2 /* AddEdu.swift */; };
+		591968E82A3B710700ACFCA2 /* AddExperience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591968E72A3B710700ACFCA2 /* AddExperience.swift */; };
+		591968EA2A3B719600ACFCA2 /* AddHandA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591968E92A3B719600ACFCA2 /* AddHandA.swift */; };
 		5928E1912A37731900524411 /* Final_ProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5928E1902A37731900524411 /* Final_ProjectApp.swift */; };
 		5928E1932A37731900524411 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5928E1922A37731900524411 /* ContentView.swift */; };
 		5928E1952A37731C00524411 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5928E1942A37731C00524411 /* Assets.xcassets */; };
@@ -22,6 +26,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		591968E32A3B70AB00ACFCA2 /* ResumeBuilding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeBuilding.swift; sourceTree = "<group>"; };
+		591968E52A3B70E700ACFCA2 /* AddEdu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEdu.swift; sourceTree = "<group>"; };
+		591968E72A3B710700ACFCA2 /* AddExperience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExperience.swift; sourceTree = "<group>"; };
+		591968E92A3B719600ACFCA2 /* AddHandA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHandA.swift; sourceTree = "<group>"; };
 		5928E18D2A37731900524411 /* Final Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Final Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5928E1902A37731900524411 /* Final_ProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Final_ProjectApp.swift; sourceTree = "<group>"; };
 		5928E1922A37731900524411 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -77,6 +85,10 @@
 				CA1E63782A3A468A00C202E3 /* EmailTips.swift */,
 				595B7C072A3A3821006A321D /* Resume.swift */,
 				595B7C092A3A4C31006A321D /* ResumeOptions.swift */,
+				591968E32A3B70AB00ACFCA2 /* ResumeBuilding.swift */,
+				591968E92A3B719600ACFCA2 /* AddHandA.swift */,
+				591968E72A3B710700ACFCA2 /* AddExperience.swift */,
+				591968E52A3B70E700ACFCA2 /* AddEdu.swift */,
 				5928E1942A37731C00524411 /* Assets.xcassets */,
 				5928E1962A37731C00524411 /* Preview Content */,
 			);
@@ -161,15 +173,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				591968E42A3B70AB00ACFCA2 /* ResumeBuilding.swift in Sources */,
 				5928E1932A37731900524411 /* ContentView.swift in Sources */,
 				595B7C082A3A3821006A321D /* Resume.swift in Sources */,
 				5928E1912A37731900524411 /* Final_ProjectApp.swift in Sources */,
 				CA1E63732A3A463100C202E3 /* InterviewTips.swift in Sources */,
+				591968E82A3B710700ACFCA2 /* AddExperience.swift in Sources */,
 				CA1E63752A3A466400C202E3 /* NoResume.swift in Sources */,
 				595B7C0A2A3A4C31006A321D /* ResumeOptions.swift in Sources */,
 				595B7C062A3A3813006A321D /* Home.swift in Sources */,
 				595B7C042A3A3804006A321D /* PersonalInfo.swift in Sources */,
 				CA1E63772A3A467600C202E3 /* TechInterview.swift in Sources */,
+				591968E62A3B70E700ACFCA2 /* AddEdu.swift in Sources */,
+				591968EA2A3B719600ACFCA2 /* AddHandA.swift in Sources */,
 				CA1E63792A3A468A00C202E3 /* EmailTips.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
