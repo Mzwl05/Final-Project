@@ -23,39 +23,35 @@ struct InterviewTips: View {
                 }
                 
                 Text("Make a good impression at a job interview, with advice on how to prepare, and how to show what you have to offer.")
-                    .padding([.top, .leading, .trailing], 12.0)
+                    .padding([.top],10.0)
+                    .padding ([.leading, .trailing],15 )
                     .font(.system(.title3, design: .rounded))
                     
                 Spacer(minLength: 30)
                 
-                Text("Preparing for the interview")
-                    .font(.title2)
-                    .multilineTextAlignment(.center)
+                Text("Helpful links")
+                    .font(.system(.title, design: .rounded))
                     .fontWeight(.bold)
+                    .multilineTextAlignment(.center)
+                Spacer(minLength: 20)
+
+                Link("Resources from dol.gov", destination: URL(string: "https://www.dol.gov/general/jobs/interview-tips")!)
+                    .padding(.bottom, 5.0)
+                    .environment(\.openURL, OpenURLAction { url in
+                        print("Open \(url)")
+                        return .handled
+                        })
+                    .tint(Color(red: 0.996, green: 0.373, blue: 0.333))
+                    .font(.system(.title2, design: .rounded))
+                    .multilineTextAlignment(.center)
                 
-                Text("•     Research the position and organization (e.g., mission, goals, etc.) prior to the interview. Familiarize yourself with the duties, responsibilities and requirements of the position. Don’t assume you know everything about the organization even if you have experience with the organization. Always do your research.")
-                    .font(.body)
-                    .multilineTextAlignment(.leading)
-                    .padding(.horizontal, 25)
-                
-                Text("•     Review your application and resume, and be prepared to support past accomplishments with specific information targeted towards the position requirements. Be sure that you focus on your paid and non-paid experience. Don’t assume the interviewer knows everything about you.")
-                    .font(.body)
-                    .multilineTextAlignment(.leading)
-                    .padding(.horizontal, 25.0)
-                    
-                Text("•    Practice interviewing. Take the time to research and review typical interview questions to help give you a framework for your responses.")
-                    .font(.body)
-                    .multilineTextAlignment(.leading)
-                    .padding(.horizontal, 25)
-                Text("•     Be flexible with scheduling and allow sufficient time for the interview. Be sure to ask for specifics regarding the time, location, point of contact (POC) as well as any other logistical details.")
-                    .font(.body)
-                    .multilineTextAlignment(.leading)
-                    .padding(.horizontal, 25)
-                Text("•   Ask whether there will be one or multiple interviewers.")
-                    .font(.body)
-                    .multilineTextAlignment(.leading)
-                    .padding(.horizontal, 25)
-                
+                Link("Resources from nationalcareers.service.gov", destination: URL(string: "https://nationalcareers.service.gov.uk/careers-advice/interview-advice/interview-advice")!)
+                    .environment(\.openURL, OpenURLAction { url in
+                        print("Open \(url)")
+                        return .handled
+                        })
+                    .tint(Color(red: 0.996, green: 0.373, blue: 0.333))
+                    .font(.system(.title2, design: .rounded))
             }
         
         }

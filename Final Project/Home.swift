@@ -72,37 +72,34 @@ struct Home: View {
                     }
                     
                     
-                    .toolbar {
-                        ToolbarItemGroup(placement: .status) {
-                            NavigationLink(destination: Home(name: $name, showPersonalInfo: showPersonalInfo)
-                                .navigationBarBackButtonHidden(true)
-                            ) {
-                                Image(systemName: "house.fill")
-                                    .tint(Color(red: 51/255, green: 55/255, blue: 69/255))
-                            }
-                            NavigationLink(destination: ContentView(name: $name, showPersonalInfo: showPersonalInfo)
-                                .navigationBarBackButtonHidden(true)
-                            ) {
-                                Image(systemName: "person.fill")
-                                    .tint(Color(red: 51/255, green: 55/255, blue: 69/255))
-                            }
-                            NavigationLink(destination: Resume()
-                                .navigationBarBackButtonHidden(true)
-                            ) {
-                                Image(systemName: "folder.fill")
-                                    .tint(Color(red: 51/255, green: 55/255, blue: 69/255))
-                            }
-                        }
-                        
-                    }
-                    .navigationBarTitleDisplayMode(.inline)
-                    .navigationBarHidden(false)
-                     
-                    
-                    
                     
                 
                 }
+                .toolbar {
+                    ToolbarItemGroup(placement: .status) {
+                        NavigationLink(destination: Home(name: $name, showPersonalInfo: showPersonalInfo)
+                            .navigationBarBackButtonHidden(true)
+                        ) {
+                            Image(systemName: "house.fill")
+                                .tint(Color(red: 51/255, green: 55/255, blue: 69/255))
+                        }
+                        NavigationLink(destination: ContentView(name: $name, showPersonalInfo: showPersonalInfo)
+                            .navigationBarBackButtonHidden(true)
+                        ) {
+                            Image(systemName: "person.fill")
+                                .tint(Color(red: 51/255, green: 55/255, blue: 69/255))
+                        }
+                        NavigationLink(destination: ResumeOptions()
+                            
+                        ) {
+                            Image(systemName: "folder.fill")
+                                .tint(Color(red: 51/255, green: 55/255, blue: 69/255))
+                        }
+                    }
+                    
+                }
+                .navigationBarTitleDisplayMode(.inline)
+                .navigationBarHidden(false)
             }
         }
     }
