@@ -1,21 +1,24 @@
 //
-//  AddEdu.swift
-//  Final Project
+//  experience2.swift
+//  info
 //
-//  Created by Maryam Zoweil on 6/15/23.
+//  Created by Keila Trigo on 15/06/23.
 //
 
 import SwiftUI
 
-struct AddEdu: View {
+struct experience2: View {
+   
+    //  experience 2 variables
+        @State var jobTitle2: String = ""
+        @State var jobCompany2: String = ""
+        @State var jobDescription2: String = ""
+        @State var startDate2: Date = Date()
+        @State var endDate2: Date = Date()
+   
+
     
-    //  edu  variables
-        @State var schoolName: String = ""
-        @State var endorsment: String = ""
-        @State var schoolDescription: String = ""
-        @State var startDate: Date = Date()
-        @State var endDate: Date = Date()
-    
+    @Environment(\.dismiss) var dismiss
     var body: some View {
         
         ZStack{
@@ -24,44 +27,43 @@ struct AddEdu: View {
             
             VStack{
                 
-                Text("Education")
+                Text("Experience #2")
                     .font(.system(.title, design: .rounded))
                     .fontWeight(.bold)
                     .multilineTextAlignment(.leading)
                     
                 Form{
-                    Section(header:Text("School name")){
-                        TextField("School name", text: $schoolName)
+                    Section(header:Text("Job title")){
+                        TextField("Job title", text: $jobTitle2)
                     }
                     
-                    Section(header:Text("Endorsment")){
-                        TextField("Endorsment", text: $endorsment)
+                    Section(header:Text("Company")){
+                        TextField("Company", text: $jobCompany2)
                     }
 //                    DATES
                     Section(header: Text("Dates")) {
                         
-                            DatePicker("Start Date", selection: $startDate, displayedComponents: [.date])
-                            DatePicker("End Date", selection: $endDate, displayedComponents: [.date])
+                            DatePicker("Start Date", selection: $startDate2, displayedComponents: [.date])
+                            DatePicker("End Date", selection: $endDate2, displayedComponents: [.date])
                         
                     }
                     
-                    Section(header: Text("Description"),footer: Text("Input your relevant coursework")) {
-                        TextEditor(text: $schoolDescription)
+                    //                    description goes here and use text editor
+                    Section(header: Text("Description"),footer: Text("Write a brief description of what your job consisted of")) {
+                        TextEditor(text: $jobDescription2)
                             .frame(height: 150)
                     }
                 }
  
 
-
-                
                 
 //                  BUTTON
                 
                 Button(action:{
-                    
-                    
+                    dismiss()
+      
                 }){
-                    Text("Submit")
+                    Text("DONE")
                         .frame(width: 300,height: 50,alignment: .center)
                         .background(Color(#colorLiteral(red: 0.9944947362, green: 0.3711119592, blue: 0.3303264976, alpha: 1)))
                         .cornerRadius(25)
@@ -77,8 +79,8 @@ struct AddEdu: View {
     }
 }
 
-struct AddEdu_Previews: PreviewProvider {
+struct experience2_Previews: PreviewProvider {
     static var previews: some View {
-        AddEdu()
+        experience2()
     }
 }

@@ -23,6 +23,10 @@
 		CA1E63752A3A466400C202E3 /* NoResume.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1E63742A3A466400C202E3 /* NoResume.swift */; };
 		CA1E63772A3A467600C202E3 /* TechInterview.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1E63762A3A467600C202E3 /* TechInterview.swift */; };
 		CA1E63792A3A468A00C202E3 /* EmailTips.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1E63782A3A468A00C202E3 /* EmailTips.swift */; };
+		CAB0E73E2A3B999000F21655 /* experience3.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB0E73D2A3B999000F21655 /* experience3.swift */; };
+		CAB0E7412A3B9AC200F21655 /* experience2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB0E7402A3B9AC200F21655 /* experience2.swift */; };
+		CAB0E7432A3BA17400F21655 /* showHA2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB0E7422A3BA17400F21655 /* showHA2.swift */; };
+		CAB0E7452A3BA19200F21655 /* showHA3.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB0E7442A3BA19200F21655 /* showHA3.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +47,10 @@
 		CA1E63742A3A466400C202E3 /* NoResume.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoResume.swift; sourceTree = "<group>"; };
 		CA1E63762A3A467600C202E3 /* TechInterview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechInterview.swift; sourceTree = "<group>"; };
 		CA1E63782A3A468A00C202E3 /* EmailTips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailTips.swift; sourceTree = "<group>"; };
+		CAB0E73D2A3B999000F21655 /* experience3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = experience3.swift; sourceTree = "<group>"; };
+		CAB0E7402A3B9AC200F21655 /* experience2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = experience2.swift; sourceTree = "<group>"; };
+		CAB0E7422A3BA17400F21655 /* showHA2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = showHA2.swift; sourceTree = "<group>"; };
+		CAB0E7442A3BA19200F21655 /* showHA3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = showHA3.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,8 +95,12 @@
 				595B7C092A3A4C31006A321D /* ResumeOptions.swift */,
 				591968E32A3B70AB00ACFCA2 /* ResumeBuilding.swift */,
 				591968E92A3B719600ACFCA2 /* AddHandA.swift */,
-				591968E72A3B710700ACFCA2 /* AddExperience.swift */,
+				CAB0E7422A3BA17400F21655 /* showHA2.swift */,
+				CAB0E7442A3BA19200F21655 /* showHA3.swift */,
 				591968E52A3B70E700ACFCA2 /* AddEdu.swift */,
+				591968E72A3B710700ACFCA2 /* AddExperience.swift */,
+				CAB0E7402A3B9AC200F21655 /* experience2.swift */,
+				CAB0E73D2A3B999000F21655 /* experience3.swift */,
 				5928E1942A37731C00524411 /* Assets.xcassets */,
 				5928E1962A37731C00524411 /* Preview Content */,
 			);
@@ -174,10 +186,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				591968E42A3B70AB00ACFCA2 /* ResumeBuilding.swift in Sources */,
+				CAB0E7452A3BA19200F21655 /* showHA3.swift in Sources */,
 				5928E1932A37731900524411 /* ContentView.swift in Sources */,
+				CAB0E73E2A3B999000F21655 /* experience3.swift in Sources */,
+				CAB0E7432A3BA17400F21655 /* showHA2.swift in Sources */,
 				595B7C082A3A3821006A321D /* Resume.swift in Sources */,
 				5928E1912A37731900524411 /* Final_ProjectApp.swift in Sources */,
 				CA1E63732A3A463100C202E3 /* InterviewTips.swift in Sources */,
+				CAB0E7412A3B9AC200F21655 /* experience2.swift in Sources */,
 				591968E82A3B710700ACFCA2 /* AddExperience.swift in Sources */,
 				CA1E63752A3A466400C202E3 /* NoResume.swift in Sources */,
 				595B7C0A2A3A4C31006A321D /* ResumeOptions.swift in Sources */,
