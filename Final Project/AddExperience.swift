@@ -80,7 +80,7 @@ struct AddExperience: View {
                 }){
                     Text("Add Experience #2")
                         .frame(width: 200,height: 20,alignment: .center)
-                        .background(Color(#colorLiteral(red: 0.9944947362, green: 0.3711119592, blue: 0.3303264976, alpha: 1)))
+                        .background(Color(#colorLiteral(red: 0.2, green: 0.2156862745, blue: 0.2705882353, alpha: 0.81)))
                         .cornerRadius(25)
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                         .font(.system(.title3, design: .rounded))
@@ -96,7 +96,7 @@ struct AddExperience: View {
                 }){
                     Text("Add Experience #3")
                         .frame(width: 200,height: 20,alignment: .center)
-                        .background(Color(#colorLiteral(red: 0.9944947362, green: 0.3711119592, blue: 0.3303264976, alpha: 1)))
+                        .background(Color(#colorLiteral(red: 0.2, green: 0.2156862745, blue: 0.2705882353, alpha: 0.81)))
                         .cornerRadius(25)
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                         .font(.system(.title3, design: .rounded))
