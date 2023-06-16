@@ -8,6 +8,12 @@
 import SwiftUI
 
 struct ResumeOptions: View {
+    @Binding var name2: String
+    @Binding var lastName: String
+    @Binding var phoneNumber: String
+    @Binding var email: String
+    @Binding var address: String
+
     var body: some View {
         ZStack{
             Color(#colorLiteral(red: 0.968627451, green: 0.9607843137, blue: 0.9225329964, alpha: 1))
@@ -22,7 +28,7 @@ struct ResumeOptions: View {
                 NavigationStack{
                     HStack {
                         
-                        NavigationLink(destination: ResumeBuilding()
+                        NavigationLink(destination: ResumeBuilding(name2: $name2, lastName: $lastName, phoneNumber:$phoneNumber, email:$email, address: $address)
                         ) {
                             VStack {
                                 Image(systemName: "graduationcap")
@@ -35,7 +41,7 @@ struct ResumeOptions: View {
                         .padding()
                         .foregroundColor(Color(red: 0.996, green: 0.373, blue: 0.333))
                         
-                        NavigationLink(destination: ResumeBuilding()
+                        NavigationLink(destination: ResumeBuilding(name2: $name2, lastName: $lastName, phoneNumber:$phoneNumber, email:$email, address: $address)
                         ) {
                             VStack {
                                 Image(systemName: "briefcase")
@@ -48,7 +54,7 @@ struct ResumeOptions: View {
                         .padding()
                         .foregroundColor(Color(red: 0.996, green: 0.373, blue: 0.333))
                         
-                        NavigationLink(destination: ResumeBuilding()
+                        NavigationLink(destination: ResumeBuilding(name2: $name2, lastName: $lastName, phoneNumber:$phoneNumber, email:$email, address: $address)
                         ) {
                             VStack {
                                 Image(systemName: "ellipsis")
@@ -70,6 +76,6 @@ struct ResumeOptions: View {
 
 struct ResumeOptions_Previews: PreviewProvider {
     static var previews: some View {
-        ResumeOptions()
+        ResumeOptions(name2: .constant(""), lastName: .constant(""), phoneNumber: .constant(""), email: .constant(""), address: .constant(""))
     }
 }

@@ -9,11 +9,16 @@ import SwiftUI
 
 struct ContentView: View {
     @Binding var name: String
-    @State private var lastName = ""
+    @Binding var lastName: String
+    @Binding var phoneNumber: String
+    @Binding var email: String
+    @Binding var address: String
 
     var showPersonalInfo: Bool 
 
     var body: some View {
+        @State var name2 = name
+
         ZStack {
             Color(#colorLiteral(red: 0.968627451, green: 0.9607843137, blue: 0.9225329964, alpha: 1))
             .ignoresSafeArea()
@@ -60,19 +65,19 @@ struct ContentView: View {
                     
                         .toolbar {
                             ToolbarItemGroup(placement: .status) {
-                                NavigationLink(destination: Home(name: $name, showPersonalInfo: showPersonalInfo)
+                                NavigationLink(destination: Home(name: $name,lastName: $lastName, phoneNumber:$phoneNumber, email:$email, address: $address, showPersonalInfo: showPersonalInfo, name2: $name2)
                                     .navigationBarBackButtonHidden(true)
                                 ) {
                                     Image(systemName: "house.fill")
                                         .tint(Color(red: 51/255, green: 55/255, blue: 69/255))
                                 }
-                                NavigationLink(destination: ContentView(name: $name, showPersonalInfo: showPersonalInfo)
+                                NavigationLink(destination: ContentView(name: $name,lastName: $lastName, phoneNumber:$phoneNumber, email:$email, address: $address, showPersonalInfo: showPersonalInfo)
                                     .navigationBarBackButtonHidden(true)
                                 ) {
                                     Image(systemName: "person.fill")
                                         .tint(Color(red: 51/255, green: 55/255, blue: 69/255))
                                 }
-                                NavigationLink(destination: ResumeOptions()
+                                NavigationLink(destination: ResumeOptions(name2: $name2, lastName: $lastName, phoneNumber:$phoneNumber, email:$email, address: $address)
                                 ) {
                                     Image(systemName: "folder.fill")
                                         .tint(Color(red: 51/255, green: 55/255, blue: 69/255))
@@ -92,6 +97,6 @@ struct ContentView: View {
 //Hello
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(name: .constant(""), showPersonalInfo: false)
+        ContentView(name: .constant(""),lastName: .constant(""), phoneNumber: .constant(""), email: .constant(""), address: .constant(""),  showPersonalInfo: false)
     }
 }

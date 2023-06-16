@@ -10,9 +10,13 @@ import SwiftUI
 struct Home: View {
     
     @Binding var name: String
-    @State private var lastName = ""
+    @Binding var lastName: String
+    @Binding var phoneNumber: String
+    @Binding var email: String
+    @Binding var address: String
     var showPersonalInfo: Bool
-    
+    @Binding var name2: String
+
     var body: some View {
         
        
@@ -77,19 +81,19 @@ struct Home: View {
                 }
                 .toolbar {
                     ToolbarItemGroup(placement: .status) {
-                        NavigationLink(destination: Home(name: $name, showPersonalInfo: showPersonalInfo)
+                        NavigationLink(destination: Home(name: $name,lastName: $lastName, phoneNumber:$phoneNumber, email:$email, address: $address, showPersonalInfo: showPersonalInfo, name2: $name2)
                             .navigationBarBackButtonHidden(true)
                         ) {
                             Image(systemName: "house.fill")
                                 .tint(Color(red: 51/255, green: 55/255, blue: 69/255))
                         }
-                        NavigationLink(destination: ContentView(name: $name, showPersonalInfo: showPersonalInfo)
+                        NavigationLink(destination: ContentView(name: $name,lastName: $lastName, phoneNumber:$phoneNumber, email:$email, address: $address, showPersonalInfo: showPersonalInfo)
                             .navigationBarBackButtonHidden(true)
                         ) {
                             Image(systemName: "person.fill")
                                 .tint(Color(red: 51/255, green: 55/255, blue: 69/255))
                         }
-                        NavigationLink(destination: ResumeOptions()
+                        NavigationLink(destination: ResumeOptions(name2: $name2,lastName: $lastName, phoneNumber:$phoneNumber, email:$email, address: $address)
                             
                         ) {
                             Image(systemName: "folder.fill")
@@ -108,6 +112,6 @@ struct Home: View {
 
 struct Home_Previews: PreviewProvider {
     static var previews: some View {
-        Home(name: .constant(""), showPersonalInfo: false)
+        Home(name: .constant(""),lastName: .constant(""), phoneNumber: .constant(""), email: .constant(""), address: .constant(""),  showPersonalInfo: false, name2: .constant(""))
     }
 }

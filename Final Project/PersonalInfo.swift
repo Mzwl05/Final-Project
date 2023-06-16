@@ -65,7 +65,7 @@ struct PersonalInfo: View {
                 
                 //button
                 
-                NavigationLink(destination: ContentView(name:$name, showPersonalInfo: showPersonalInfo)
+                NavigationLink(destination: ContentView(name: $name,lastName: $lastName, phoneNumber:$phoneNumber, email:$email, address: $address, showPersonalInfo: showPersonalInfo)
                     .navigationBarBackButtonHidden(true)
                 ) {
                     //                //func updateVariable() {

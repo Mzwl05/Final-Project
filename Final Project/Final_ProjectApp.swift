@@ -11,7 +11,7 @@ import SwiftUI
 struct Final_ProjectApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView(name: .constant(""), showPersonalInfo: false)
+            ContentView(name: .constant(""),lastName: .constant(""), phoneNumber: .constant(""), email: .constant(""), address: .constant(""),  showPersonalInfo: false)
         }
     }
 }

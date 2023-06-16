@@ -7,14 +7,21 @@
 import SwiftUI
 
 struct Resume: View {
+    @Binding var name2: String
+    @Binding var lastName: String
+    @Binding var phoneNumber: String
+    @Binding var email: String
+    @Binding var address: String
+
+
     var body: some View {
             VStack(alignment: .leading) {
-                Text("Name")
+                Text("\(name2) \(lastName)")
                     .font(.largeTitle)
                     .bold()
                     .padding(.bottom, 8)
                
-                Text("Phone Number, Email, Address")
+                Text("\(phoneNumber), \(email), \(address)")
                     .font(.headline)
                     .foregroundColor(.gray)
                     .padding(.bottom, 16)
@@ -98,6 +105,6 @@ struct Resume: View {
 
 struct Resume_Previews: PreviewProvider {
     static var previews: some View {
-        Resume()
+        Resume(name2: .constant(""), lastName: .constant(""), phoneNumber: .constant(""), email: .constant(""), address: .constant(""))
     }
 }
