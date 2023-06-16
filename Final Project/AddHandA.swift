@@ -63,7 +63,7 @@ struct AddHandA: View {
                     showHA2.toggle()
                     
                 }){
-                    Text("Add Experience #2")
+                    Text("Add Award/Honor #2")
                         .frame(width: 200,height: 20,alignment: .center)
                         .background(Color(#colorLiteral(red: 0.2, green: 0.2156862745, blue: 0.2705882353, alpha: 0.81)))
                         .cornerRadius(25)
@@ -79,7 +79,7 @@ struct AddHandA: View {
                     showHA3.toggle()
                     
                 }){
-                    Text("Add Experience #3")
+                    Text("Add Award/Honor #3")
                         .frame(width: 200,height: 20,alignment: .center)
                         .background(Color(#colorLiteral(red: 0.2, green: 0.2156862745, blue: 0.2705882353, alpha: 0.81)))
                         .cornerRadius(25)
